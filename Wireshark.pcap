@@ -1,0 +1,129 @@
+No.     Time           Source                Destination           Protocol Length Info
+    471 30.514505595   192.168.1.158         44.228.249.3          HTTP     726    POST /userinfo.php HTTP/1.1  (application/x-www-form-urlencoded)
+
+Frame 471: 726 bytes on wire (5808 bits), 726 bytes captured (5808 bits) on interface wlan0, id 0
+    Section number: 1
+    Interface id: 0 (wlan0)
+        Interface name: wlan0
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Nov 16, 2024 09:13:15.226289951 EST
+    UTC Arrival Time: Nov 16, 2024 14:13:15.226289951 UTC
+    Epoch Arrival Time: 1731766395.226289951
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.006920754 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 30.514505595 seconds]
+    Frame Number: 471
+    Frame Length: 726 bytes (5808 bits)
+    Capture Length: 726 bytes (5808 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:http:urlencoded-form]
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+Ethernet II, Src: Intel_80:9d:cd (e4:b3:18:80:9d:cd), Dst: Intel_77:55:64 (6c:88:14:77:55:64)
+    Destination: Intel_77:55:64 (6c:88:14:77:55:64)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: Intel_80:9d:cd (e4:b3:18:80:9d:cd)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 2]
+Internet Protocol Version 4, Src: 192.168.1.158, Dst: 44.228.249.3
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 712
+    Identification: 0x585c (22620)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: TCP (6)
+    Header Checksum: 0xb7a5 [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 192.168.1.158
+    Destination Address: 44.228.249.3
+    [Stream index: 13]
+Transmission Control Protocol, Src Port: 50224, Dst Port: 80, Seq: 1012, Ack: 5394, Len: 672
+    Source Port: 50224
+    Destination Port: 80
+    [Stream index: 10]
+    [Stream Packet Number: 27]
+    [Conversation completeness: Complete, WITH_DATA (63)]
+        ..1. .... = RST: Present
+        ...1 .... = FIN: Present
+        .... 1... = Data: Present
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: RFDASS]
+    [TCP Segment Len: 672]
+    Sequence Number: 1012    (relative sequence number)
+    Sequence Number (raw): 3505106945
+    [Next Sequence Number: 1684    (relative sequence number)]
+    Acknowledgment Number: 5394    (relative ack number)
+    Acknowledgment number (raw): 2242445902
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 1026
+    [Calculated window size: 262656]
+    [Window size scaling factor: 256]
+    Checksum: 0x8162 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 16.851041319 seconds]
+        [Time since previous frame in this TCP stream: 9.919871170 seconds]
+    [SEQ/ACK analysis]
+        [iRTT: 0.189392784 seconds]
+        [Bytes in flight: 672]
+        [Bytes sent since last PSH flag: 672]
+    TCP payload (672 bytes)
+Hypertext Transfer Protocol
+    POST /userinfo.php HTTP/1.1\r\n
+        Request Method: POST
+        Request URI: /userinfo.php
+        Request Version: HTTP/1.1
+    Host: testphp.vulnweb.com\r\n
+    Connection: keep-alive\r\n
+    Content-Length: 20\r\n
+        [Content length: 20]
+    Cache-Control: max-age=0\r\n
+    Origin: http://testphp.vulnweb.com\r\n
+    Content-Type: application/x-www-form-urlencoded\r\n
+    Upgrade-Insecure-Requests: 1\r\n
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36\r\n
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\r\n
+    Referer: http://testphp.vulnweb.com/login.php\r\n
+    Accept-Encoding: gzip, deflate\r\n
+    Accept-Language: en-US,en;q=0.9\r\n
+    Cookie: login=test%2Ftest\r\n
+        Cookie pair: login=test%2Ftest
+    \r\n
+    [Response in frame: 483]
+    [Full request URI: http://testphp.vulnweb.com/userinfo.php]
+    File Data: 20 bytes
+HTML Form URL Encoded: application/x-www-form-urlencoded
+    Form item: "uname" = "test"
+        Key: uname
+        Value: test
+    Form item: "pass" = "test"
+        Key: pass
+        Value: test
